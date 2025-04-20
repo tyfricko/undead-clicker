@@ -1,0 +1,32 @@
+@keyframes float {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.animate-float {
+  animation: float 1s ease-out forwards;
+  position: absolute;
+}
+
+.combo-active {
+  animation: pulse-glow 1s infinite;
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.7), 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.9);
+  }
+}
