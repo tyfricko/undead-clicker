@@ -1,4 +1,25 @@
-node_modules/
-dist/
-.env
+# OS junk
 .DS_Store
+Thumbs.db
+
+# Node-related (in case you use npm later)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# VS Code config files
+.vscode/
+
+# Build / Output
+dist/
+build/
+*.log
+
+# Git / Temp
+*.swp
+*.swo
+*.tmp
+
+# Environment / Secrets (if added)
+.env
+.env.local
